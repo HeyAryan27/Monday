@@ -1,5 +1,5 @@
 import React from 'react'
-// import PostedJobs from './PostedJobs';
+
 import "../_styles/index.scss";
 // import InterviewMeetingInfo from './InterviewMeetingInfo';
 

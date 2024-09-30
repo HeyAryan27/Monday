@@ -1,4 +1,4 @@
-import { dashboardData } from '../utils/constant'; // Import the data
+import { dashboardData } from '../utils/constant'; 
 
 const AttendanceSummary = () => {
     const data = dashboardData; 
@@ -13,7 +13,7 @@ const AttendanceSummary = () => {
 
   <hr className="mb-4" />
 
-  {/* Attendance List with colored dots */}
+
   <div className="flex flex-col md:flex-row items-center md:mb-4">
     <ul className="mb-4 text-sm space-y-2 -ml-5">
       <li className="flex items-center py-1">
@@ -34,7 +34,7 @@ const AttendanceSummary = () => {
       </li>
     </ul>
 
-    {/* Circle chart */}
+
     <div className="relative">
       <svg className="w-36 h-36 mx-auto" viewBox="0 0 80 80">
         <circle
@@ -47,7 +47,7 @@ const AttendanceSummary = () => {
           cy="40"
         />
         
-        {/* Green - On Time */}
+    
         <circle
               className="text-green-500"
               strokeWidth="6"
@@ -62,7 +62,7 @@ const AttendanceSummary = () => {
               transform="rotate(-90 40 40)"
             />
         
-        {/* Yellow - Work From Home */}
+  
         <circle
               className="text-yellow-500"
               strokeWidth="6"
@@ -76,7 +76,7 @@ const AttendanceSummary = () => {
               cy="40"
               transform="rotate(-90 40 40)"
             />
-        {/* Red - Late Attendance */}
+    
         <circle
               className="text-red-500"
               strokeWidth="6"
@@ -90,7 +90,7 @@ const AttendanceSummary = () => {
               cy="40"
             />
         
-        {/* Gray - Absent */}
+      
         <circle
               className="text-gray-500"
               strokeWidth="6"

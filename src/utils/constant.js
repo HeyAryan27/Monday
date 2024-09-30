@@ -155,7 +155,7 @@ export const workingHistoryData = [
     departureTime: '5:00 PM',
     effectiveTime: '8:00',
   },
-  // Add more entries if needed
+  
 ];
 
 export const jobList = [

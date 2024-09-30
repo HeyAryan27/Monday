@@ -19,9 +19,9 @@ const Attendance = () => {
 
       <hr className="md:mb-4" />
 
-      {/* Flex container for details and SVG */}
+  
       <div className="flex flex-col-reverse md:flex-row items-center md:mb-4">
-        {/* Left side: Attendance Details */}
+        
         <div className="flex-1 mb-4 md:mb-0">
           <div className="flex items-center text-gray-600 mb-2">
             <svg
@@ -39,7 +39,7 @@ const Attendance = () => {
           </p>
         </div>
 
-        {/* Right side: SVG graphic */}
+        
         <div className="relative flex-shrink-0">
           <svg className="w-20 h-20 md:w-24 md:h-24 mt-2" viewBox="0 0 80 80">
             <circle
@@ -73,7 +73,7 @@ const Attendance = () => {
         </div>
       </div>
 
-      {/* Button below the details and SVG */}
+  
       <button className="bg-blue-500 text-white py-2 px-4 rounded-lg w-full">Mark Present</button>
     </div>
   );

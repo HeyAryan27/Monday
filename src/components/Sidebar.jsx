@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiHome, FiUsers, FiCalendar, FiTruck, FiBriefcase, FiMessageSquare, FiX } from 'react-icons/fi'; // Importing necessary icons
+import { FiHome, FiUsers, FiCalendar, FiTruck, FiBriefcase, FiMessageSquare, FiX } from 'react-icons/fi'; 
 import { Link } from 'react-router-dom';
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
@@ -8,7 +8,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
       <div className="flex items-center justify-between h-16 px-2">
         {/* <img src="/logo.png" alt="Logo" className="h-10" /> */}
         <h6>LexCorp</h6>
-        {/* Close button for mobile */}
+    
         <FiX className="md:hidden text-gray-800 cursor-pointer" size={24} onClick={toggleSidebar} />
       </div>
       <ul className="mt-6 text-xs -ml-10">
