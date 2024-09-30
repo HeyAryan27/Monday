@@ -7,9 +7,8 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
     <div className={`sm:h-screen fixed md:relative top-0 left-0 w-20 bg-white border-r border-b z-20 transform ${isOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-200 ease-in-out md:translate-x-0`}>
       <div className="flex items-center justify-between h-16 px-2">
         {/* <img src="/logo.png" alt="Logo" className="h-10" /> */}
-        <h6>LexCorp</h6>
-    
-        <FiX className="md:hidden text-gray-800 cursor-pointer" size={24} onClick={toggleSidebar} />
+        <h5>Lex</h5>
+            <FiX className="md:hidden text-gray-800 cursor-pointer" size={24} onClick={toggleSidebar} />
       </div>
       <ul className="mt-6 text-xs -ml-10">
         <Link to="/" className="no-underline">
