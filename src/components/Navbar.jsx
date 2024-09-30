@@ -66,11 +66,11 @@ const Navbar = ({ toggleSidebar }) => {
         <FiBell className="text-gray-500 cursor-pointer hidden md:block" size={28} /> {/* Reduced size */}
         <BiMessageDetail className="text-gray-500 cursor-pointer hidden md:block" size={28} /> {/* Reduced size */}
 
-        <img
+        {/* <img
           src="https://png.pngtree.com/thumb_back/fh260/background/20230527/pngtree-cartoon-of-a-young-woman-smiling-on-a-black-background-image_2680954.jpg"
           alt="Profile"
           className="w-8 h-8 rounded-full cursor-pointer object-cover md:w-10 md:h-10"
-        />
+        /> */}
       </div>
     </div>
   );

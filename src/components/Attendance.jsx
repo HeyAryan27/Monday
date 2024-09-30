@@ -1,9 +1,9 @@
-import { dashboardData } from '../utils/constant'; // Import the data
+import { dashboardData } from '../utils/constant'; 
 
 const Attendance = () => {
   const data = dashboardData;
 
-  // Helper function to calculate percentage for the circular progress bar
+
   const getStrokeDashOffset = (percentage) => {
     const radius = 36;
     const circumference = 2 * Math.PI * radius;
@@ -55,17 +55,18 @@ const Attendance = () => {
               className="text-yellow-500"
               strokeWidth="8"
               strokeDasharray="226"
-              strokeDashoffset={getStrokeDashOffset(67)} // Adjust value as needed
+              strokeDashoffset={`${getStrokeDashOffset(data.attendance.today.days)}`}
               strokeLinecap="round"
               stroke="currentColor"
               fill="transparent"
               r="36"
               cx="40"
               cy="40"
+               transform="rotate(-90 40 40)"
             />
           </svg>
           <div className="absolute inset-0 flex flex-col items-center justify-center mt-2">
-            <span className="text-xl font-semibold text-gray-800">67%</span>
+            <span className="text-xl font-semibold text-gray-800">{data.attendance.today.days}</span>
             <span className="text-xs text-gray-500">in office</span>
             <span className="text-xs text-yellow-500">POOR</span>
           </div>
