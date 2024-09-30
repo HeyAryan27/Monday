@@ -26,7 +26,7 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="p-4 bg-white rounded-lg">
+    <div className="-m-8 p-4 bg-white rounded-lg">
       
       <div className="flex flex-col md:flex-row justify-between items-center space-y-3 md:space-y-0">
         <h1 className="text-lg font-semibold">Good afternoon, {dashboardData.user}!</h1>
